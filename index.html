@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <title>Love & Lumière | Official Beauty Store</title>
+    <meta name="description" content="Discover your beauty essentials at Love & Lumière. Explore skincare, cosmetics and self-care favorites.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <p> A little luxury, delivered to your door ✨ </p>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+
+        <div class="header-inner">
+
+            <button class="menu-button" id="menuButton" aria-label="Open menu">
+                ☰
+            </button>
+
+            <a href="#" class="brand">
+                Love <span>&</span> Lumière
+            </a>
+
+            <nav class="navigation" id="navigation">
+                <a href="#">Home</a>
+                <a href="#collections">Collections</a>
+                <a href="#bestsellers">Best Sellers</a>
+                <a href="#about">Our Story</a>
+            </nav>
+
+            <div class="header-actions">
+
+                <button class="icon-button" id="searchButton" aria-label="Search">
+                    ⌕
+                </button>
+
+                <button class="icon-button" id="cartButton" aria-label="Shopping cart">
+                    ♡ <span class="cart-count" id="cartCount">0</span>
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Search Box -->
+        <div class="search-box" id="searchBox">
+            <input type="text" id="searchInput" placeholder="Search your beauty essentials...">
+        </div>
+
+    </header>
+
+
+    <!-- Hero Section -->
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">YOUR BEAUTY, YOUR RITUAL</p>
+
+                <h1>
+                    Beauty begins<br>
+                    with <em>you.</em>
+                </h1>
+
+                <p class="hero-description">
+                    Discover thoughtful beauty essentials
+                    made for your everyday glow.
+                </p>
+
+                <a href="#bestsellers" class="primary-button">
+                    Explore Collection <span>→</span>
+                </a>
+
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=1200"
+                    alt="Elegant skincare products"
+                >
+                <div class="image-caption">
+                    <span>THE ART OF SELF-CARE</span>
+                    <span>01 / BEAUTY EDIT</span>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Benefits -->
+        <section class="benefits">
+
+            <div>✧ Carefully Curated Beauty</div>
+            <div>✧ Everyday Self-Care</div>
+            <div>✧ A Touch of Luxury</div>
+            <div>✧ Made for Your Glow</div>
+
+        </section>
+
+
+        <!-- Collections -->
+        <section class="collections section" id="collections">
+
+            <div class="section-heading">
+                <p class="eyebrow">EXPLORE OUR WORLD</p>
+                <h2>Find your <em>beauty ritual.</em></h2>
+                <p>Everything you need to feel like your best self.</p>
+            </div>
+
+            <div class="collection-grid">
+
+                <a href="#bestsellers" class="collection-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?w=700"
+                        alt="Skincare products"
+                    >
+                    <div class="collection-overlay">
+                        <h3>Skincare</h3>
+                        <span>Explore collection →</span>
+                    </div>
+                </a>
+
+                <a href="#bestsellers" class="collection-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=700"
+                        alt="Makeup cosmetics"
+                    >
+                    <div class="collection-overlay">
+                        <h3>Makeup</h3>
+                        <span>Explore collection →</span>
+                    </div>
+                </a>
+
+                <a href="#bestsellers" class="collection-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=700"
+                        alt="Beauty and self-care products"
+                    >
+                    <div class="collection-overlay">
+                        <h3>Self-Care</h3>
+                        <span>Explore collection →</span>
+                    </div>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Best Sellers -->
+        <section class="products-section section" id="bestsellers">
+
+            <div class="section-heading">
+                <p class="eyebrow">THE COMMUNITY FAVORITES</p>
+                <h2>Our <em>best sellers.</em></h2>
+                <p>Beauty essentials worth falling in love with.</p>
+            </div>
+
+            <div class="product-grid" id="productContainer">
+                <!-- Products will be added using JavaScript -->
+            </div>
+
+        </section>
+
+
+        <!-- Brand Story -->
+        <section class="about-section" id="about">
+
+            <div class="about-image">
+                <img
+                    src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?w=900"
+                    alt="Beautiful skincare arrangement"
+                >
+            </div>
+
+            <div class="about-content">
+                <p class="eyebrow">A LITTLE ABOUT US</p>
+
+                <h2>
+                    Because self-care<br>
+                    is <em>self-love.</em>
+                </h2>
+
+                <p>
+                    At Love & Lumière, we believe beauty is more
+                    than a routine. It is a moment to pause,
+                    reconnect with yourself and celebrate
+                    the person you are.
+                </p>
+
+                <a href="#collections" class="text-link">
+                    Discover our collections →
+                </a>
+            </div>
+
+        </section>
+
+
+        <!-- Newsletter -->
+        <section class="newsletter">
+
+            <p class="eyebrow">A NOTE FROM US</p>
+
+            <h2>A little glow in your inbox.</h2>
+
+            <p>Discover beauty favorites, inspiration and special updates.</p>
+
+            <form id="newsletterForm">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit">Subscribe →</button>
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <a href="#" class="brand footer-brand">
+            Love <span>&</span> Lumière
+        </a>
+
+        <p>Beauty is a feeling. Make it yours.</p>
+
+        <div class="footer-links">
+            <a href="#collections">Collections</a>
+            <a href="#about">Our Story</a>
+            <a href="#bestsellers">Shop</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 Love &amp; Lumière. All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>
